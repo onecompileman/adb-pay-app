@@ -1,14 +1,26 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="home">
+  <ion-grid class="home__login-container">
+    <ion-row>
+      <ion-col col-12>
+        <span class="home__login" float-right>Log In</span>
+      </ion-col>
+    </ion-row>
+    <ion-row class="home__title-container">
+      <ion-col col-12 align-self-center>
+        <p class="home__app-title">A D B &nbsp;&nbsp; P A Y</p>
+        <p class="home__app-subtitle">Cashless payment Solution <br>For ADB employees, by ADB</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row justify-content-center>
+      <button (click)="navigateToRegistration()" class="home__register" color="primary" ion-button>Register</button>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+<ion-footer class="home-footer">
+  <ion-toolbar transparent class="home-footer__container">
+    ADB Digital Solutions
+  </ion-toolbar>
+</ion-footer>

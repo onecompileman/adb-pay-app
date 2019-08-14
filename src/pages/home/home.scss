@@ -1,3 +1,50 @@
 page-home {
+  .home {
+    &__login-container {
+      background-color: color($colors, primary, base);
+      margin: 0 !important;
+      min-height: 300px;
+    }
 
+    &__login {
+      font-size: 18px;
+      color: white;
+    }
+
+    &__register {
+      border-radius: 0;
+      width: 300px;
+      margin-top: 70px;
+    }
+
+    &__app-title {
+      font-size: 34px;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      color: white;
+      margin-bottom: 5px !important;
+    }
+
+    &__app-subtitle {
+      text-align: center;
+      color: white;
+      font-style: italic;
+      margin-top: 5px !important;
+      margin-bottom: 50px !important;
+    }
+
+    &__title-container {
+      margin-top: 100px;
+    }
+  }
+
+  .home-footer {
+    &__container {
+      border-top: 1px solid grey;
+      background-color: white !important;
+      color: color($colors, primary, base);
+      font-weight: normal;
+      text-align: center;
+    }
+  }
 }

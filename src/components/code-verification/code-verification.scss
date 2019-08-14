@@ -1,0 +1,30 @@
+code-verification {
+
+  .verification-input {
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid color($colors, primary, base);
+  }
+
+  .verification-container {
+    text-align: center;
+  }
+
+  .verification-actions {
+    margin-top: 70px;
+  }
+
+  .verify {
+    border-radius: 0;
+    width: 300px;
+    margin-top: 70 !important;
+  }
+
+  .next-step {
+    border-radius: 0;
+    width: 300px;
+    margin-top: 20 !important;
+  }
+}

@@ -1,0 +1,17 @@
+employee-verfication {
+  .registration {
+    &__adb-container {
+      margin-top: 100px;
+    }
+
+    &__instruction {
+      font-size: 20px;
+    }
+
+    &__next-step {
+      border-radius: 0;
+      width: 300px;
+      margin-top: 70px;
+    }
+  }
+}

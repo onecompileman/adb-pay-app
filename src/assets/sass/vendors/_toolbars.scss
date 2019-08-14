@@ -1,0 +1,8 @@
+.header .toolbar-background {
+  background-color: color($colors, primary, base) !important;
+}
+
+.header .toolbar-title,
+.header .back-button {
+  color: white !important;
+}

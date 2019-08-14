@@ -1,17 +1,23 @@
-<ion-grid class="registration__adb-container">
+<ion-grid class="code">
   <ion-row>
-    <p class="registration__instruction">Enter verfication in 59s</p>
-    <div class="verification-container">
-      <input class="verification-input" type="text"> <span>•</span>
-      <input class="verification-input" type="text"> <span>•</span>
-      <input class="verification-input" type="text"> <span>•</span>
-      <input class="verification-input" type="text">
-    </div>
+    <ion-col>
+      <p padding class="registration__instruction">Enter verfication in 59s</p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <div class="verification-container">
+        <input class="verification-input" type="text"> <span>•</span>
+        <input class="verification-input" type="text"> <span>•</span>
+        <input class="verification-input" type="text"> <span>•</span>
+        <input class="verification-input" type="text">
+      </div>
+    </ion-col>
   </ion-row>
 </ion-grid>
 <ion-grid class="verification-actions">
-  <ion-row>
-    <button ion-button class="verify">Verify</button>
-    <button ion-button color="light" class="next-step">Resend Verification</button>
+  <ion-row justify-content-center>
+    <button (click)="nextStep()" ion-button class="verify">Verify</button>
+    <button ion-button color="light" class="resend">Resend Verification</button>
   </ion-row>
 </ion-grid>

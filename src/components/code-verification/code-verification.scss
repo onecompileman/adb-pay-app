@@ -1,5 +1,9 @@
 code-verification {
 
+  .code {
+    margin-top: 100px;
+  }
+
   .verification-input {
     height: 60px;
     width: 60px;
@@ -9,6 +13,7 @@ code-verification {
   }
 
   .verification-container {
+    margin: auto;
     text-align: center;
   }
 
@@ -20,11 +25,11 @@ code-verification {
     border-radius: 0;
     width: 300px;
     margin-top: 70 !important;
+    margin-bottom: 16px;
   }
 
-  .next-step {
+  .resend {
     border-radius: 0;
     width: 300px;
-    margin-top: 20 !important;
   }
 }

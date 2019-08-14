@@ -5,8 +5,11 @@
 </ion-header>
 
 <ion-content padding class="registration" [ngSwitch]="currentStep">
-
-  <employee-verfication (finished)="currentStep = $event" *ngSwitchCase="1"></employee-verfication>
-  <phone-number-verfication (finished)="currentStep = $event" *ngSwitchCase="2"></phone-number-verfication>
-  <code-verification *ngSwitchCase="3"></code-verification>
+  <employee-verfication (finished)="currentStep = $event" *ngSwitchCase="registrationStep?.EmployeeVerification">
+  </employee-verfication>
+  <phone-number-verfication (finished)="currentStep = $event" *ngSwitchCase="registrationStep?.PhoneVerification">
+  </phone-number-verfication>
+  <code-verification (finished)="currentStep = $event" *ngSwitchCase="registrationStep?.CodeVerification">
+  </code-verification>
+  <password-setup *ngSwitchCase="registrationStep?.PasswordSetup"></password-setup>
 </ion-content>

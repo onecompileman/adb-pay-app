@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Registration</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="registration" [ngSwitch]="currentStep">
+
+  <employee-verfication (finished)="currentStep = $event" *ngSwitchCase="1"></employee-verfication>
+  <phone-number-verfication (finished)="currentStep = $event" *ngSwitchCase="2"></phone-number-verfication>
+  <code-verification *ngSwitchCase="3"></code-verification>
+</ion-content>

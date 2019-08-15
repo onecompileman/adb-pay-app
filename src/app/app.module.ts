@@ -15,6 +15,7 @@ import { TopupPageModule } from './../pages/topup/topup.module';
 import { TransactionsPageModule } from './../pages/transactions/transactions.module';
 import { TabsHomePageModule } from './../pages/tabs-home/tabs-home.module';
 import {TabsHomePage} from "../pages/tabs-home/tabs-home";
+import { RewardsPage } from '../pages/rewards/rewards';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import {TabsHomePage} from "../pages/tabs-home/tabs-home";
     TabsHomePageModule,
     TransactionsPageModule,
     TopupPageModule,
-    AccountPageModule
+    AccountPageModule,
+    RewardsPage
   ],
   bootstrap: [IonicApp],
   entryComponents: [

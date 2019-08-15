@@ -1,3 +1,5 @@
+import { SendMoneyPageModule } from './../pages/send-money/send-money.module';
+import { QRScanner } from '@ionic-native/qr-scanner';
 import { TabsPage } from './../pages/tabs/tabs';
 import { LoginPageModule } from './../pages/login/login.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -32,7 +34,8 @@ import {TabsHomePage} from "../pages/tabs-home/tabs-home";
     TabsHomePageModule,
     TransactionsPageModule,
     TopupPageModule,
-    AccountPageModule
+    AccountPageModule,
+    SendMoneyPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -43,6 +46,7 @@ import {TabsHomePage} from "../pages/tabs-home/tabs-home";
   providers: [
     StatusBar,
     SplashScreen,
+    QRScanner,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })

@@ -1,3 +1,68 @@
 page-tabs-home {
 
+    .tabs-home {
+
+        &__actions {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        &__amount {
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        &__available-balance-text {
+            color: #ffffff;
+            font-size: 15px;
+        }
+
+        &__balance {
+            height: 150px;
+            background-color: color($colors, primary, base);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__button-container {
+            width: 100%;
+        }
+
+        &__button-container:not(:last-of-type) {
+            border-right: 1px solid #e0e0e0;
+        }
+
+        &__currency {
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        &__icon {
+            font-size: 20px;
+
+            &--brown {
+                color: brown;
+            }
+
+            &--green {
+                color: green;
+            }
+
+            &--purple {
+                color: purple;
+            }
+        }
+
+        &__view-card {
+            padding: 15px 0;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+    }
+
 }

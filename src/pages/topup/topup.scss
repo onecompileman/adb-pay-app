@@ -1,3 +1,42 @@
 page-topup {
 
+    .topup {
+
+        &__amount {
+            color: #ffffff;
+            font-size: 25px;
+        }
+
+        &__balance {
+            height: 150px;
+            background-color: color($colors, primary, base);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+
+        &__content {
+            box-shadow: 0 -21px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        &__balance-text {
+            color: #ffffff;
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+
+        &__header {
+            color: #002569;
+            font-weight: bold;
+            border: none !important;
+        }
+
+        &__row {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px;
+        }
+
+    }
 }

@@ -1,3 +1,45 @@
 page-transactions {
 
+    .page-transactions {
+        &__card {
+            margin: 20px;
+            -webkit-box-shadow: 7px 9px 10px 1px rgba(229,233,255,1);
+            -moz-box-shadow: 7px 9px 10px 1px rgba(229,233,255,1);
+            box-shadow: 7px 9px 10px 1px rgba(229,233,255,1);
+            &__date {
+                width: 100%;
+                padding: 6px;
+                text-align: right;
+                height: 30px;
+                margin-bottom: 5px;
+                color: white;
+                background-color: color($colors, primary, base);
+            }
+
+            &__content {
+                padding: 5px;
+                &__amount {
+                    height: 20px;
+                    font-size: 18px;
+                    color: color($colors, danger, base);
+                }
+
+                &__sender {
+                    height: max-content;
+                    align-items: center;
+                    justify-content: center;
+                    &__image {
+                        background-image: url('https://cdn1.iconfinder.com/data/icons/navigation-elements/512/user-login-man-human-body-mobile-person-512.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+
+                &__receiver {
+                    height: 20px;
+                }
+            }
+        }
+    }
+
 }

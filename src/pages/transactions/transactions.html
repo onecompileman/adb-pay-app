@@ -5,6 +5,22 @@
   Ionic pages and navigation.
 -->
 
-<ion-content padding>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda at consequatur, dicta dolorum eius eos eveniet facere impedit modi, non quaerat, quo ratione reprehenderit sed sequi totam ullam ut!</p>
+<ion-content class="page-transactions">
+  <div class="page-transactions__card" *ngFor="let transaction of transactions">
+    <div class="page-transactions__card__date">
+        <ion-icon name="calendar"></ion-icon> {{ transaction.date }}
+    </div>
+    <div class="page-transactions__card__content">
+      <div class="page-transactions__card__content__amount">
+        Amount: {{ transaction.amount }}
+      </div>
+      <div class="page-transactions__card__content__sender">
+        <div [style.backgroundImage]="'url(https://cdn1.iconfinder.com/data/icons/navigation-elements/512/user-login-man-human-body-mobile-person-512.png)'"></div>
+        Sender: {{ transaction.sender }}
+      </div>
+      <div class="page-transactions__card__content__receiver">
+        Receiver: {{ transaction.receiver }}
+      </div>
+    </div>
+  </div>
 </ion-content>

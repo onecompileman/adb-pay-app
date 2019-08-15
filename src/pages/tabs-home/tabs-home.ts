@@ -1,3 +1,4 @@
+import { ReceiveMoneyPage } from './../receive-money/receive-money';
 import { SendMoneyPage } from './../send-money/send-money';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -31,6 +32,10 @@ export class TabsHomePage {
 
   rewards(): void {
     this.navCtrl.push(RewardsPage);
+  }
+
+  openReceiveMoneyPage(): void {
+    this.navCtrl.push(ReceiveMoneyPage);
   }
 
 }

@@ -1,3 +1,4 @@
+import { ReceiveMoneyPageModule } from './../pages/receive-money/receive-money.module';
 import { SendMoneyPageModule } from './../pages/send-money/send-money.module';
 import { QRScanner } from '@ionic-native/qr-scanner';
 import { TabsPage } from './../pages/tabs/tabs';
@@ -37,7 +38,8 @@ import { RewardsPageModule } from '../pages/rewards/rewards.module';
     TopupPageModule,
     AccountPageModule,
     RewardsPageModule,
-    SendMoneyPageModule
+    SendMoneyPageModule,
+    ReceiveMoneyPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -20,6 +20,6 @@ export class RegistrationPage {
     this.currentStep = this.registrationStep.EmployeeVerification;
   }
 
-  
+
 
 }

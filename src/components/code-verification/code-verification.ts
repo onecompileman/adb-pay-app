@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { RegistrationStep } from '../../shared/enums/registration-step.enum';
 
 @Component({
   selector: 'code-verification',
@@ -6,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class CodeVerificationComponent {
 
+  @Output() finished = new EventEmitter();
 
   constructor() {
+  }
+
+  nextStep() {
+    this.finished.emit(RegistrationStep.PasswordSetup);
   }
 
 }

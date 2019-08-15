@@ -1,22 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { RegistrationStep } from '../../shared/enums/registration-step.enum';
 
-/**
- * Generated class for the PasswordSetupComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
 @Component({
   selector: 'password-setup',
   templateUrl: 'password-setup.html'
 })
 export class PasswordSetupComponent {
 
-  text: string;
+  @Output() finished = new EventEmitter();
 
   constructor() {
-    console.log('Hello PasswordSetupComponent Component');
-    this.text = 'Hello World';
+  }
+
+  nextStep() {
+    this.finished.emit(RegistrationStep.EndOfStep);
   }
 
 }

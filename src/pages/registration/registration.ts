@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { RegistrationStep } from '../../shared/enums/registration-step.enum';
 
 @IonicPage()
 @Component({
@@ -8,12 +9,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RegistrationPage {
 
-  currentStep = 1;
+  currentStep;
+  registrationStep;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
+    this.registrationStep = RegistrationStep;
+    this.currentStep = this.registrationStep.EmployeeVerification;
   }
+
+
 
 }

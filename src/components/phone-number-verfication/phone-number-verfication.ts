@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { RegistrationStep } from '../../shared/enums/registration-step.enum';
 
 @Component({
   selector: 'phone-number-verfication',
@@ -12,7 +13,7 @@ export class PhoneNumberVerficationComponent {
   }
 
   nextStep() {
-    this.finished.emit(3);
+    this.finished.emit(RegistrationStep.CodeVerification);
   }
 
 }

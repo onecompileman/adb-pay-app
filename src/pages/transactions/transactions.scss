@@ -1,44 +1,41 @@
 page-transactions {
 
     .page-transactions {
+
         &__card {
-            margin: 20px;
-            -webkit-box-shadow: 7px 9px 10px 1px rgba(229,233,255,1);
-            -moz-box-shadow: 7px 9px 10px 1px rgba(229,233,255,1);
-            box-shadow: 7px 9px 10px 1px rgba(229,233,255,1);
-            &__date {
-                width: 100%;
-                padding: 6px;
-                text-align: right;
-                height: 30px;
-                margin-bottom: 5px;
-                color: white;
-                background-color: color($colors, primary, base);
-            }
+            border: 1px solid #e2e2e2;
+            height: 125px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
 
-            &__content {
-                padding: 5px;
-                &__amount {
-                    height: 20px;
-                    font-size: 18px;
-                    color: color($colors, danger, base);
-                }
+        &__card-header {
+            padding: 10px 10px;
+            border-bottom: 1px solid #e2e2e2;
+            background-color: #f1f1f1;
+        }
 
-                &__sender {
-                    height: max-content;
-                    align-items: center;
-                    justify-content: center;
-                    &__image {
-                        background-image: url('https://cdn1.iconfinder.com/data/icons/navigation-elements/512/user-login-man-human-body-mobile-person-512.png');
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                    }
-                }
+        &__card-content {
+            padding: 5px 15px;
+        }
 
-                &__receiver {
-                    height: 20px;
-                }
-            }
+
+        &__icon {
+            color: blue;
+        }
+
+        &__amount,
+        &__sender,
+        &__receiver {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 0;
+            color: #635e5e;
+            font-size: 13px;
+        }
+
+        &__label {
+            width: 50%;
         }
     }
 

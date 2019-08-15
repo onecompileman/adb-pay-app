@@ -1,3 +1,42 @@
 page-transactions {
 
+    .page-transactions {
+
+        &__card {
+            border: 1px solid #e2e2e2;
+            height: 125px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+
+        &__card-header {
+            padding: 10px 10px;
+            border-bottom: 1px solid #e2e2e2;
+            background-color: #f1f1f1;
+        }
+
+        &__card-content {
+            padding: 5px 15px;
+        }
+
+
+        &__icon {
+            color: blue;
+        }
+
+        &__amount,
+        &__sender,
+        &__receiver {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 0;
+            color: #635e5e;
+            font-size: 13px;
+        }
+
+        &__label {
+            width: 50%;
+        }
+    }
+
 }

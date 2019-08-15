@@ -15,11 +15,62 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TransactionsPage {
 
+  transactions: any[] = [
+    {
+      id: 1,
+      amount: 2000,
+      receiver: 'ADB',
+      sender: 'You',
+      date: 'Aug 15, 2019'
+    },
+    {
+      id: 2,
+      amount: 500,
+      receiver: 'Vendor 1',
+      sender: 'You',
+      date: 'Aug 13, 2019'
+    },
+    {
+      id: 3,
+      amount: 3000,
+      receiver: 'ADB',
+      sender: 'You',
+      date: 'Aug 10, 2019'
+    },
+    {
+      id: 4,
+      amount: 2000,
+      receiver: 'You',
+      sender: 'Juan Dela Cruz',
+      date: 'July 30, 2019'
+    },
+    {
+      id: 4,
+      amount: 2000,
+      receiver: 'You',
+      sender: 'Juan Dela Cruz',
+      date: 'July 30, 2019'
+    },
+    {
+      id: 4,
+      amount: 2000,
+      receiver: 'You',
+      sender: 'Juan Dela Cruz',
+      date: 'July 30, 2019'
+    },
+    {
+      id: 4,
+      amount: 2000,
+      receiver: 'You',
+      sender: 'Juan Dela Cruz',
+      date: 'July 30, 2019'
+    }
+];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TransactionsPage');
+  ionViewDidLoad(): void {
   }
 
 }

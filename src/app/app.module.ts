@@ -1,3 +1,5 @@
+import { SendMoneyPageModule } from './../pages/send-money/send-money.module';
+import { QRScanner } from '@ionic-native/qr-scanner';
 import { TabsPage } from './../pages/tabs/tabs';
 import { LoginPageModule } from './../pages/login/login.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,7 +17,7 @@ import { TopupPageModule } from './../pages/topup/topup.module';
 import { TransactionsPageModule } from './../pages/transactions/transactions.module';
 import { TabsHomePageModule } from './../pages/tabs-home/tabs-home.module';
 import {TabsHomePage} from "../pages/tabs-home/tabs-home";
-import { RewardsPage } from '../pages/rewards/rewards';
+import { RewardsPageModule } from '../pages/rewards/rewards.module';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { RewardsPage } from '../pages/rewards/rewards';
     TransactionsPageModule,
     TopupPageModule,
     AccountPageModule,
-    RewardsPage
+    RewardsPageModule,
+    SendMoneyPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -45,6 +48,7 @@ import { RewardsPage } from '../pages/rewards/rewards';
   providers: [
     StatusBar,
     SplashScreen,
+    QRScanner,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })

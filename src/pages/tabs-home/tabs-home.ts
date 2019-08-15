@@ -1,5 +1,8 @@
+import { SendMoneyPage } from './../send-money/send-money';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
+import { RewardsPage } from '../rewards/rewards';
 
 /**
  * Generated class for the TabsHomePage page.
@@ -15,11 +18,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TabsHomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private qrScanner: QRScanner) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TabsHomePage');
+  }
+
+  scanQr(): void {
+    this.navCtrl.push(SendMoneyPage);
+  }
+
+  rewards(): void {
+    this.navCtrl.push(RewardsPage);
   }
 
 }

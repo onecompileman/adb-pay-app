@@ -1,9 +1,31 @@
-<!--
-  Generated template for the TabsHomePage page.
+<ion-content class="tabs-home">
+  <div class="tabs-home__balance">
+    <div class="tabs-home__available-balance-text">
+      Available Balance
+    </div>
+    <div class="tabs-home__available-amount">
+      <span class="tabs-home__currency">PHP</span>
+      <span class="tabs-home__amount">0.00</span>
+    </div>
+  </div>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-content padding>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, assumenda at atque commodi cumque distinctio eum facilis molestias neque repudiandae suscipit, unde! Aliquam doloremque labore nulla saepe sit temporibus ullam!</p>
+  <div class="tabs-home__actions">
+    <div class="tabs-home__button-container">
+      <div class="tabs-home__icon tabs-home__icon--green"><ion-icon name="cash"></ion-icon></div>
+      <div><span>Top up</span></div>
+    </div>
+    <div class="tabs-home__button-container" (click)="scanQr()">
+      <div class="tabs-home__icon"><ion-icon name="qr-scanner"></ion-icon></div>
+      <div><span>Scan QR</span></div>
+    </div>
+    <div class="tabs-home__button-container" (click)="rewards()">
+      <div class="tabs-home__icon tabs-home__icon--purple"><ion-icon name="medal"></ion-icon></div>
+      <div><span>Rewards</span></div>
+    </div>
+  </div>
+
+  <div class="tabs-home__view-card">
+    <div class="tabs-home__icon tabs-home__icon--brown"><ion-icon name="card"></ion-icon></div>
+    <div><span>View Card</span></div>
+  </div>
 </ion-content>

@@ -24,8 +24,15 @@
     </div>
   </div>
 
-  <div class="tabs-home__view-card">
-    <div class="tabs-home__icon tabs-home__icon--brown"><ion-icon name="card"></ion-icon></div>
-    <div><span>View Card</span></div>
-  </div>
+  <div class="tabs-home__actions">
+      <div class="tabs-home__button-container">
+          <div class="tabs-home__icon tabs-home__icon--brown"><ion-icon name="card"></ion-icon></div>
+          <div><span>View Card</span></div>
+      </div>
+      <div class="tabs-home__button-container" (click)="openReceiveMoneyPage()">
+        <div class="tabs-home__icon tabs-home__icon--green"><ion-icon name="cash"></ion-icon></div>
+        <div><span>Receive Money</span></div>
+      </div>
+    </div>
+
 </ion-content>
